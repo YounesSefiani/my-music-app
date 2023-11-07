@@ -1,0 +1,44 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+img {
+  width: 30%;
+  height: 50%;
+}
+
+.album_name {
+  background-color: red;
+  max-width: 190px;
+  border-radius: 20px;
+  margin: 10px auto;
+}
+
+.album_name:hover {
+  background-color: black;
+  color: purple;
+}
+
+.album-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 20px;
+  padding: 20px;
+  border: 5px solid black;
+  background-color: #f9f9f9;
+  color: black;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+nav li {
+  display: inline;
+  padding: 10px;
+}
