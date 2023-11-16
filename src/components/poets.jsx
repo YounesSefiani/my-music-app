@@ -1,33 +1,202 @@
 import React from "react";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Interface from "./interface";
 
+function Poets() {
+  const groupData = {
+    name_groupe: "Poets of The Fall",
+    logo: "./images/poets_of_the_fall/photos/POTF-gold.png",
+    provenance: "Finlande",
+    Année_début: "2003",
+    genre: "Rock",
+    description: "ee",
+    lyrics: [
+      "And we keep driving into the night, it's a late goodbye, such a late goodbye",
+      "When I thought that i fought this war alone, you were there by my side on the frontline",
+      "You lift my spirit, take me higher, make me fly, touch the moon up in the sky, when you are mine",
+    ],
+    images: [
+      "./images/poets_of_the_fall/photos/POTF_01.jpg",
+      "./images/poets_of_the_fall/photos/POTF_02.jpg",
+      "./images/poets_of_the_fall/photos/POTF_03.jpg",
+    ],
+    albums: [
+      {
+        name: "Signs of Life",
+        image: "./images/poets_of_the_fall/albums/signs_of_lifes.jpg",
+        year: 2005,
+        nbtracks: 12,
+        names_tracks: [
+          "Lift",
+          "Overboard",
+          "Late Goodbye",
+          "Don't Mess With Me",
+          "3 AM",
+          "Stay",
+          "Seek You Out",
+          "Shallow",
+          "Everything Fades",
+          "Someone Special",
+          "Illusion & Dream",
+          "Sleep",
+        ],
+      },
+      {
+        name: "Carnival of Rust",
+        image: "./images/poets_of_the_fall/albums/carnival_of_rust.jpg",
+        year: 2006,
+        nbtracks: 12,
+        names_tracks: [
+          "Fire",
+          "Sorry Go Round",
+          "Carnival of Rust",
+          "Locking up the Sun",
+          "Gravity",
+          "King of Fools",
+          "Roses",
+          "Desire",
+          "All the Way / 4U",
+          "Delicious",
+          "Maybe Tomorrow is a Better Day",
+          "Dawn",
+        ],
+      },
+      {
+        name: "Revolution Roulette",
+        image: "./images/poets_of_the_fall/albums/revolution_roulette.jpg",
+        year: 2008,
+        nbtracks: 11,
+        names_tracks: [
+          "More",
+          "The Ultimate Fling - Director's Cut",
+          "Revolution Roulette",
+          "Psychosis",
+          "Fragile",
+          "Clevermind",
+          "Miss Impossible",
+          "Diamond for Tears",
+          "Passion Colors Everything",
+          "Save Me",
+          "Where Do We Draw the Line",
+        ],
+      },
+      {
+        name: "Twilight Theater",
+        image: "./images/poets_of_the_fall/albums/twilight_theater.jpg",
+        year: 2010,
+        nbtracks: 10,
+        names_tracks: [
+          "Dreaming Wide Awake",
+          "War",
+          "Change",
+          "15 Min Flame",
+          "Given and Denied",
+          "Rewind",
+          "Dying to Live",
+          "You're Still Here",
+          "Smoke and Mirrors",
+          "Heal My Wounds",
+        ],
+      },
+      {
+        name: "Temple of Thought (Bonus Edition)",
+        image: "./images/poets_of_the_fall/albums/temple_of_thought.jpg",
+        year: 2012,
+        nbtracks: 14,
+        names_tracks: [
+          "Running Out of Time",
+          "Temple of Thought",
+          "Cradled in Love",
+          "Kamikaze Love",
+          "The Lie Eternal",
+          "Skin",
+          "The Distance",
+          "Show Me This Life",
+          "Morning Tide",
+          "The Ballad of Jeremiah Peacekeeper",
+          "The Happy Song",
+          "Temple of Thought - Unplugged Studio Live",
+          "Skin - Unplugged Studio Live",
+          "Signs of Life",
+        ],
+      },
+      {
+        name: "Jealous Gods",
+        image: "./images/poets_of_the_fall/albums/jealous_gods.jpg",
+        year: 2014,
+        nbtracks: 11,
+        names_tracks: [
+          "Daze",
+          "Jealous Gods",
+          "Rumors",
+          "Brighter Than the Sun",
+          "Love Will Come to You",
+          "Rogue",
+          "Rebirth",
+          "Hounds to Hamartia",
+          "Clear Blue Sky",
+          "Choice Millionaire",
+          "Nothing Stays the Same",
+        ],
+      },
+      {
+        name: "Clearview",
+        image: "./images/poets_of_the_fall/albums/clearview.jpg",
+        year: 2016,
+        nbtracks: 10,
+        names_tracks: [
+          "Drama for Life",
+          "The Game",
+          "The Child in Me",
+          "Once Upon a Playground Rainy",
+          "Children of the Sun",
+          "Shadow Play",
+          "Center Stage",
+          "The Labyrinth",
+          "Crystalline",
+          "Moonlight Kissed",
+        ],
+      },
+      {
+        name: "Ultraviolet",
+        image: "./images/poets_of_the_fall/albums/ultraviolet.jpg",
+        year: 2018,
+        nbtracks: 10,
+        names_tracks: [
+          "Dancing on Broken Glass",
+          "My Dark Disquiet",
+          "False Kings",
+          "Fool's Paradise",
+          "Standstill",
+          "The Sweet Escape",
+          "Moments Before the Storm",
+          "In a Perfect World",
+          "Angel",
+          "Choir of Cicadas",
+        ],
+      },
+      {
+        name: "Ghostlight",
+        image: "./images/poets_of_the_fall/albums/ghostlight.jpg",
+        year: 2022,
+        nbtracks: 10,
+        names_tracks: [
+          "Firedancer",
+          "Requiem for My Harlequin",
+          "Sounds of Yesterday",
+          "Revelations",
+          "Heroes and Vilains",
+          "Lust for Life",
+          "Chasing Echoes",
+          "Weaver of Dreams",
+          "Hello Cabaret",
+          "Beyond the Horizon",
+        ],
+      },
+    ],
+  };
+  return <Interface groupData={groupData} />;
+}
 
-const albumsData = [
-    {
-        name : "Signs of Life",
-        image : "./images/signs_of_lifes.jpg",
-        year : 2005,
-        nbtracks : 12,
-        names_tracks : ["Lift", "Overboard", "Late Goodbye", "Don't Mess With Me", "3 AM", "Stay", "Seek You Out", "Shallow", "Everything Fades", "Someone Special", "Illusion & Dream", "Sleep"],
-    },
-]
-
-    function poets() {
-        return (
-            <div className="album-container">
-                {albumsData.map((music, index) => (
-                <div key={index}>
-                    <h1>Poets of The Fall</h1>
-                    <h3>Nombre albums : 9</h3>
-                    <img src={music.image}/>
-                    <p className="album_name">Album : {music.name}</p>
-                    <p>Year : {music.year}</p>
-                    <p>Nombre de pistes : {music.nbtracks}</p>
-                    <p>Pistes : {music.names_tracks.join(", ")}</p>
-                </div>
-            ))}
-            </div>
-        );
-    }
-    
-
-export default poets;
+export default Poets;
