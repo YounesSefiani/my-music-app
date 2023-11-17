@@ -1,23 +1,31 @@
-import './App.css';
-import {Link, Outlet} from "react-router-dom";
-import Poets from './components/poets';
+import "./App.css";
+import { Link, Outlet } from "react-router-dom";
 
 function App() {
-
   return (
     <div>
       <h1>Ma musique !</h1>
       <nav>
         <ul>
-          <li>Poets of the Fall</li>
-          <li>Sheena Ringo</li>
-          <li>Rhymester</li>
+          <li>
+            <Link to="/">Home</Link>
+          </li>
+          <li>
+            <Link to="/poets_of_the_fall">Poets of the Fall</Link>
+          </li>
+          <li>
+            <Link to="/sheena_ringo">Sheena Ringo</Link>
+          </li>
+          <li>
+            <Link to="/rhymester">Rhymester</Link>
+          </li>
         </ul>
       </nav>
-      <Poets/>
+      <main>
+        <Outlet />
+      </main>
     </div>
-    
-  )
+  );
 }
 
 export default App;
