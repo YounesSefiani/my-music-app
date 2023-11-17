@@ -6,39 +6,40 @@
 }
 
 img {
-  width: 30%;
-  height: 50%;
+  width: 40%;
+  height: 35%;
 }
 
-.album_name {
-  background-color: red;
-  max-width: 190px;
-  border-radius: 20px;
-  margin: 10px auto;
-}
-
-.album_name:hover {
-  background-color: black;
-  color: purple;
-}
-
-.album-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  margin: 20px;
-  padding: 20px;
-  border: 5px solid black;
-  background-color: #f9f9f9;
+.albums {
+  background-color: white;
   color: black;
+  margin-top: 20px;
 }
 
 nav ul {
   list-style-type: none;
+  background: black;
 }
 
 nav li {
   display: inline;
   padding: 10px;
+}
+
+nav a {
+  color: purple;
+}
+
+nav a:hover {
+  background-color: white;
+}
+
+.presentation {
+  background-color: white;
+  color: black;
+}
+
+.description {
+  background-color: white;
+  color: black;
 }
