@@ -6,6 +6,9 @@ import Home from "./components/home";
 import Poets from "./components/poets";
 import Sheena_Ringo from "./components/sheena_ringo";
 import Rhymester from "./components/rhymester";
+import Orelsan from "./components/orelsan";
+import Fozzy from "./components/fozzy";
+import Anna_Tsuchiya from "./components/anna_tsuchiya";
 
 const router = createBrowserRouter([
   {
@@ -26,6 +29,18 @@ const router = createBrowserRouter([
       {
         path: "/rhymester",
         element: <Rhymester />,
+      },
+      {
+        path: "/orelsan",
+        element: <Orelsan />,
+      },
+      {
+        path: "/anna_tsuchiya",
+        element: <Anna_Tsuchiya />,
+      },
+      {
+        path: "/fozzy",
+        element: <Fozzy />,
       },
     ],
   },
