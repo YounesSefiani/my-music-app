@@ -19,6 +19,15 @@ function App() {
           <li>
             <Link to="/rhymester">Rhymester</Link>
           </li>
+          <li>
+            <Link to ="/orelsan">Orelsan</Link>
+          </li>
+          <li>
+            <Link to ="/anna_tsuchiya">Anna Tsuchiya</Link>
+          </li>
+          <li>
+            <Link to ="/fozzy">Fozzy</Link>
+          </li>
         </ul>
       </nav>
       <main>
